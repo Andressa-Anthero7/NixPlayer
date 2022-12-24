@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PlayNix</title>
+
+
+    <!-- Jquery CDN -->
+     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+
+
+    <!-- Boostrap 4 CDN  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/a69cec9c91.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="fontawesome/css/all.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+
+   <!-- DropZone.js -->
+        <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
+    <!-- Script do Dropzone -->
+
+
+
+        <style>
+                body {
+                    background-color: #f8f8f8 !important;
+                }
+
+                .dz {
+                    border: dashed !important;
+                    background-color: #ccc !important;
+                    border-radius: 10px !important;
+                }
+
+                .dz:hover {
+                    background-color: aliceblue !important;
+                }
+        </style>
+</head>
+<body>
+
+    <!-- Formulario para adicionar Audio -->
+         <form enctype='multipart/form-data' action="adicionar_audio" method='POST' class="dropzone dz" id="my-dropzone" >
+            {% csrf_token %}
+            <div class="fallback">
+              <input name="file" type="file" multiple />
+            </div>
+        </form>
+
+         <script>
+              Dropzone.discover();
+            </script>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

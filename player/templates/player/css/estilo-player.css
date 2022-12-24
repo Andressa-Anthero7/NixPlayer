@@ -1,0 +1,135 @@
+
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+background:pink;
+
+
+@media(max-width: 320.98px){
+   body{
+
+      background: black;
+      font-size: 1em;
+        font-family: cursive;
+
+   }
+
+   #lupa-pesquisa{
+      position: relative;
+      left: 0.5em;
+      top:0.2em;
+      color: white;
+      font-size: 1.5em;
+
+   }
+
+   #logo{
+      background: white;
+       padding:1em;
+       position: relative;
+       left:2em;
+   }
+
+   #logo-img{
+      padding:1em;
+   }
+
+   #barra-pesquisa{
+      max-width: 300px;
+      position: fixed;
+      display: none;
+      font-size: 1em;
+
+   }
+
+   #btn-buscar{
+      position: relative;
+      left: 14em;
+   }
+
+   #menu{
+       max-width: 300px;
+
+   }
+
+   #btn-menu{
+      position: relative;
+      top:-1em;
+   }
+
+   #user{
+      position: relative;
+      left:5em;
+   }
+
+   .navegacao{
+      position: relative;
+      background: whitesmoke;
+      left: -15em;
+      top:1em;
+      min-width: 320px;
+      height:25em;
+   }
+
+   .navbar-toggler-icon{
+
+   }
+
+   .fa-bars{
+      font-size: 1.5em;
+   }
+
+   #menu{
+      position: relative;
+      left:15em;
+      top: -1em;
+   }
+
+
+   #config-preferencias{
+      position: relative;
+      top: 5em;
+
+   }
+
+   .btn-config{
+      width: 280px;
+      margin:0em 1em 0em 1em;
+   }
+
+   #header-config-pref{
+      text-align: center;
+      margin-top:1em;
+      white-space: wrap;
+   }
+
+   #box-config-preferencias{
+      background: yellow;
+   }
+
+   #display-carroussel{
+      position: relative;
+      top: 15em;
+      background: white;
+   }
+
+   #player{
+
+   }
+
+   audio{
+
+      max-width:15em;
+   }
+
+   #timer{
+      position: relative;
+      left:13em;
+   }
+
+
+
+}
